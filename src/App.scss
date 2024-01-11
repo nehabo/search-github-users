@@ -1,0 +1,116 @@
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 992px;
+
+.App {
+  text-align: center;
+
+  padding: 30px 24px;
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    padding: 140px 98px;
+  }
+  @media only screen and (min-width: $desktop-breakpoint) {
+    padding: 144px 355px;
+  }
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.app-title-text {
+  color: #222731;
+  font-family: "Space Mono";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.display-mode {
+  display: inline-flex;
+  align-items: center;
+  .display-mode-text {
+    color: #697c9a;
+    text-align: right;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    padding-right: 15px;
+  }
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+}
+
+.searchbar {
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fefefe;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  margin-bottom: 16px;
+  justify-content: space-between;
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    height: 69px;
+    margin-bottom: 24px;
+  }
+}
+
+.search-icon {
+  width: 24.058px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 20px 2px 20px 16px;
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    padding: 23px 23px 22px 32px;
+  }
+}
+
+.search-button {
+  width: 84px;
+  height: 46px;
+  flex-shrink: 0;
+
+  border: none;
+
+  border-radius: 10px;
+  background: #0079ff;
+  text-decoration: none;
+
+  color: #fff;
+
+  font-family: "Space Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin: 6.5px 7px 7.5px 7px;
+  @media only screen and (min-width: $tablet-breakpoint) {
+    margin: 9.5px 10px;
+  }
+}
+
+.user-card {
+  height: 419px; // TODO: remove this
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fefefe;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
